@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Truk & Bongkar Muat Jabodetabek | Jaya Laksana</title>
+    <meta name="description" content="Jasa truk dan bongkar muat profesional di Jabodetabek. Armada lengkap, harga kompetitif, layanan 24/7. Hubungi via WhatsApp sekarang!" />
+    <meta name="keywords" content="jasa truk jabodetabek, bongkar muat, sewa truk, logistik jakarta, trucking service, pengiriman barang" />
+    <link rel="icon" type="image/jpeg" href="public/jasaangkutdanbongkarmuat.jpeg">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a5f",
+                        secondary: "#f97316",
+                        whatsapp: "#25D366",
+                    },
+                    fontFamily: {
+                        sans: [
+                            "system-ui",
+                            "-apple-system",
+                            "BlinkMacSystemFont",
+                            "Segoe UI",
+                            "Roboto",
+                            "sans-serif",
+                        ],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        /* Smooth Scroll */
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Hero Background */
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a5f 0%, #243b53 50%, #1e3a5f 100%);
+        }
+        /* Card Hover Effect */
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        /* Floating WhatsApp Button Animation */
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        /* Fade In Animation */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        /* Truck Image Style */
+        
+        .truck-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased">
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo dengan Gambar -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0, 0)">
+                    <!-- GANTI LOGO DI SINI -->
+                    <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo" class="w-12 h-12 object-contain rounded-full" onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              " />
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">Jaya Laksana</h1>
+                        <p class="text-xs text-gray-500">Logistik Terpercaya</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#hero" class="text-gray-700 hover:text-secondary transition-colors font-medium">Beranda</a>
+                    <a href="#layanan" class="text-gray-700 hover:text-secondary transition-colors font-medium">Layanan</a>
+                    <a href="#armada" class="text-gray-700 hover:text-secondary transition-colors font-medium">Armada</a>
+                    <a href="#keunggulan" class="text-gray-700 hover:text-secondary transition-colors font-medium">Keunggulan</a>
+                    <a href="#coverage" class="text-gray-700 hover:text-secondary transition-colors font-medium">Area</a>
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105">
+            Hubungi WhatsApp
+          </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t pt-4">
+                <div class="flex flex-col gap-3">
+                    <a href="#hero" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Beranda</a>
+                    <a href="#layanan" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Layanan</a>
+                    <a href="#armada" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Armada</a>
+                    <a href="#keunggulan" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Keunggulan</a>
+                    <a href="#coverage" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Area</a>
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-center mt-2">
+            Hubungi WhatsApp
+          </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <!-- Background Decorations -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <div class="inline-block bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        ✓ Terpercaya 10+ Tahun di Jabodetabek
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Solusi Transportasi &
+                        <span class="text-secondary">Logistik Terpercaya</span> untuk Bisnis Anda
+                    </h2>
+
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                        Jasa truk dan bongkar muat profesional dengan armada lengkap, harga kompetitif, dan layanan 24/7. Siap melayani kebutuhan logistik Anda di seluruh Jabodetabek.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg> Pesan via WhatsApp
+                        </a>
+                        <a href="#layanan" class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
+              Lihat Layanan
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl font-bold text-white mb-1">
+                                500+
+                            </div>
+                            <div class="text-sm text-gray-300">Klien Puas</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl font-bold text-white mb-1">
+                                10+
+                            </div>
+                            <div class="text-sm text-gray-300">Tahun Pengalaman</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl font-bold text-white mb-1">
+                                24/7
+                            </div>
+                            <div class="text-sm text-gray-300">Layanan</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl font-bold text-white mb-1">
+                                98%
+                            </div>
+                            <div class="text-sm text-gray-300">Tepat Waktu</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Hero Image -->
+                <div class="hidden lg:block animate-fade-in" style="animation-delay: 0.2s">
+                    <div class="relative">
+                        <!-- GANTI GAMBAR TRUK HERO DI SINI -->
+                        <img src="public/truck-hero.jpg" alt="Armada Truk Jaya Laksana" class="w-full h-auto rounded-2xl shadow-2xl object-cover" style="max-height: 500px" onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'block';
+                " />
+                        <!-- Fallback jika gambar tidak ada -->
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hidden" id="hero-fallback">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                                    <h3 class="text-white font-semibold mb-2">
+                                        Armada Lengkap
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">Engkel, Kecil, Besar</p>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                                    <h3 class="text-white font-semibold mb-2">
+                                        Aman & Terjamin
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">Asuransi Lengkap</p>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                                    <h3 class="text-white font-semibold mb-2">Tepat Waktu</h3>
+                                    <p class="text-gray-300 text-sm">On-time Delivery</p>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                                    <h3 class="text-white font-semibold mb-2">Jabodetabek</h3>
+                                    <p class="text-gray-300 text-sm">Cakupan Penuh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="layanan" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Layanan Kami
+        </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Solusi Logistik Lengkap
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Layanan komprehensif untuk kebutuhan transportasi dan logistik bisnis Anda
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Jasa Angkut Barang
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Pengiriman barang berbagai jenis dengan armada yang sesuai kebutuhan
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Barang komersial
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Barang pindahan
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Event & pameran
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Jasa Pindahan</h3>
+                    <p class="text-gray-600 mb-4">
+                        Layanan pindahan rumah, kantor, kontrakan, dan apartemen
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Pindahan rumah
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Pindahan kantor
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Pindahan apartemen
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bongkar Muat</h3>
+                    <p class="text-gray-600 mb-4">
+                        Tim terlatih dengan peralatan modern untuk penanganan barang aman
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Tim profesional
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Peralatan lengkap
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Barang aman
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Pengiriman Kilat
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Layanan ekspres untuk pengiriman mendesak dalam area Jabodetabek
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Priority handling
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Real-time tracking
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> Same-day delivery
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ARMADA SECTION DENGAN GAMBAR ==================== -->
+    <section id="armada" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Armada Kami
+        </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Pilihan Armada Truk
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Kami menyediakan berbagai ukuran truk untuk memenuhi kebutuhan Anda
+                </p>
+            </div>
+
+            <div class="swiper mySwiper max-w-6xl mx-auto">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <img src="public/truk jaya laksana.jpeg" alt="Truk Jaya Laksana 1" class="truck-image">
+                            <div class="p-8 text-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Jaya Laksana 1</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <img src="public/truk jaya laksana 2.jpeg" alt="Truk Jaya Laksana 2" class="truck-image">
+                            <div class="p-8 text-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Jaya Laksana 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <img src="public/truk jaya laksana 3.jpeg" alt="Truk Jaya Laksana 3" class="truck-image">
+                            <div class="p-8 text-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Jaya Laksana 3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <img src="public/truk jaya laksana 4.jpeg" alt="Truk Jaya Laksana 4" class="truck-image">
+                            <div class="p-8 text-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Jaya Laksana 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KEUNGGULAN SECTION ==================== -->
+    <section id="keunggulan" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Keunggulan Kami
+        </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Mengapa Memilih Jaya Laksana?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Partner logistik yang mengerti kebutuhan bisnis Anda
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Pengalaman 10+ Tahun
+                        </h3>
+                        <p class="text-gray-600">
+                            Ribuan pengiriman sukses dengan tingkat kepuasan 98%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Armada Terawat
+                        </h3>
+                        <p class="text-gray-600">
+                            Perawatan rutin, asuransi lengkap, dan inspeksi berkala
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Harga Kompetitif
+                        </h3>
+                        <p class="text-gray-600">
+                            Transparan, tanpa biaya tersembunyi, dengan penawaran fleksibel
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Tim Profesional
+                        </h3>
+                        <p class="text-gray-600">
+                            Sopir berpengalaman dan tim bongkar muat terlatih
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Layanan 24/7</h3>
+                        <p class="text-gray-600">
+                            Dukungan pelanggan dan tracking real-time setiap saat
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Cakupan Penuh Jabodetabek
+                        </h3>
+                        <p class="text-gray-600">
+                            Mengenal setiap rute dan area di Jabodetabek
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COVERAGE AREA SECTION ==================== -->
+    <section id="coverage" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Area Layanan
+        </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Mencakup Seluruh Jabodetabek
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Rute teroptimasi untuk setiap area di Jabodetabek
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Jakarta</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Jakarta Pusat</li>
+                        <li>• Jakarta Utara</li>
+                        <li>• Jakarta Barat</li>
+                        <li>• Jakarta Selatan</li>
+                        <li>• Jakarta Timur</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Bogor</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Kota Bogor</li>
+                        <li>• Kabupaten Bogor</li>
+                        <li>• Sentul</li>
+                        <li>• Cibinong</li>
+                        <li>• Depok area</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Depok</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Kota Depok</li>
+                        <li>• Cimanggis</li>
+                        <li>• Sawangan</li>
+                        <li>• Cinere</li>
+                        <li>• Margonda</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Tangerang</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Kota Tangerang</li>
+                        <li>• Tangerang Selatan</li>
+                        <li>• BSD City</li>
+                        <li>• Gading Serpong</li>
+                        <li>• Cikupa</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Bekasi</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Kota Bekasi</li>
+                        <li>• Kabupaten Bekasi</li>
+                        <li>• Cikarang</li>
+                        <li>• Tambun</li>
+                        <li>• Cibitung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="py-20 bg-gradient-to-br from-primary to-[#243b53] relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Siap Mengirim Barang Anda dengan Aman dan Tepat Waktu?
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                    Dapatkan penawaran gratis dalam 10 menit. Tim kami siap membantu kebutuhan logistik Anda.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg> Hubungi via WhatsApp
+                    </a>
+                    <a href="tel:+6281297936738" class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg> +62 812-3456-7890
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-primary text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <!-- Logo Footer -->
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo" class="w-12 h-12 object-contain rounded-full" onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                " />
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center hidden">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7h8m-8 5h8m-4-9a2 2 0 100 4 2 2 0 000-4zm0 14a2 2 0 100-4 2 2 0 000-4z" />
+              </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Jaya Laksana</h3>
+                            <p class="text-xs text-gray-300">Logistik Terpercaya</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Solusi Transportasi & Logistik Terpercaya di Jabodetabek. Hubungi kami via WhatsApp untuk layanan terbaik.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Menu Cepat</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#hero" class="text-gray-300 hover:text-secondary transition-colors text-sm">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Layanan</a>
+                        </li>
+                        <li>
+                            <a href="#armada" class="text-gray-300 hover:text-secondary transition-colors text-sm">Armada</a>
+                        </li>
+                        <li>
+                            <a href="#coverage" class="text-gray-300 hover:text-secondary transition-colors text-sm">Area Layanan</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Layanan Kami</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Jasa Angkut
+                Barang</a>
+                        </li>
+                        <li>
+                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Jasa Pindahan</a>
+                        </li>
+                        <li>
+                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Bongkar Muat</a>
+                        </li>
+                        <li>
+                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Pengiriman
+                Kilat</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+                            <a href="tel:+6281297936738" class="text-gray-300 hover:text-secondary transition-colors text-sm">
+                +6281297936738</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+                            <span class="text-gray-300 text-sm">Jl. Pd. Cabe Indah 1 No.36, Pd. Cabe Udik, Kec. Pamulang,
+                Kota Tangerang Selatan, Banten 15418</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Jaya Laksana. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        Hubungi via WhatsApp untuk layanan terbaik
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="whatsapp-float bg-whatsapp hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
+        title="Chat via WhatsApp">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    </a>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+        // Initialize Swiper
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

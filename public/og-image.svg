@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="630" fill="#1e3a5f"/>
+    <g transform="translate(400, 250)">
+        <path d="M100 180H50C44.4772 180 40 175.523 40 170V100C40 94.4772 44.4772 90 50 90H100C105.523 90 110 94.4772 110 100V170C110 175.523 105.523 180 100 180Z" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M170 180H130C124.477 180 120 175.523 120 170V100C120 94.4772 124.477 90 130 90H170C175.523 90 180 94.4772 180 100V170C180 175.523 175.523 180 170 180Z" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M190 90H200C205.523 90 210 94.4772 210 100V170C210 175.523 205.523 180 200 180H190V90Z" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M120 90V60" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M180 90V60" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M40 140H20" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M220 140H190" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M70 180V210" stroke="#f97316" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M150 180V210" stroke="#f97316" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="72" fill="white" font-weight="bold">JAYA LAKSANA</text>
+    <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="36" fill="#f0f4f8">Solusi Transportasi & Logistik Terpercaya</text>
+</svg>
