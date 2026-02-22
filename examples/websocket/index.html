@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jasa Truk & Bongkar Muat Jabodetabek | Jaya Laksana</title>
     <meta name="google-site-verification" content="cTFzYMAD-SgOFzTrEmS--sS0NJQYMH4To_z2y5UHr2E" />
-    <meta name="description" content="Jasa truk dan bongkar muat profesional di Jabodetabek. Armada lengkap, harga kompetitif, layanan 24/7. Hubungi via WhatsApp sekarang!" />
-    <meta name="keywords" content="jasa truk jabodetabek, bongkar muat, sewa truk, logistik jakarta, trucking service, pengiriman barang" />
+    <meta name="description"
+        content="Jasa truk dan bongkar muat profesional di Jabodetabek. Armada lengkap, harga kompetitif, layanan 24/7. Hubungi via WhatsApp sekarang!" />
+    <meta name="keywords"
+        content="jasa truk jabodetabek, bongkar muat, sewa truk, logistik jakarta, trucking service, pengiriman barang" />
     <link rel="icon" type="image/jpeg" href="public/jasaangkutdanbongkarmuat.jpeg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,23 +41,26 @@
 
     <style>
         /* Smooth Scroll */
-        
+
         html {
             scroll-behavior: smooth;
         }
+
         /* Hero Background */
-        
+
         .hero-bg {
             background: linear-gradient(135deg, #1e3a5f 0%, #243b53 50%, #1e3a5f 100%);
         }
+
         /* Card Hover Effect */
-        
+
         .card-hover:hover {
             transform: translateY(-8px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 12px rgba(249, 115, 22, 0.4);
         }
+
         /* Floating WhatsApp Button Animation */
-        
+
         .whatsapp-float {
             position: fixed;
             bottom: 24px;
@@ -63,34 +68,39 @@
             z-index: 1000;
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
+
             0%,
             100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.1);
             }
         }
+
         /* Fade In Animation */
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .animate-fade-in {
             animation: fadeInUp 0.6s ease-out forwards;
         }
+
         /* Truck Image Style */
-        
+
         .truck-image {
             width: 100%;
             height: 160px;
@@ -109,7 +119,8 @@
                 <!-- Logo dengan Gambar -->
                 <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0, 0)">
                     <!-- GANTI LOGO DI SINI -->
-                    <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo" class="w-12 h-12 object-contain rounded-full" onerror="
+                    <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo"
+                        class="w-12 h-12 object-contain rounded-full" onerror="
                 this.style.display = 'none';
                 this.nextElementSibling.style.display = 'flex';
               " />
@@ -122,11 +133,17 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#hero" class="text-gray-700 hover:text-secondary transition-colors font-medium">Beranda</a>
-                    <a href="#layanan" class="text-gray-700 hover:text-secondary transition-colors font-medium">Layanan</a>
-                    <a href="#armada" class="text-gray-700 hover:text-secondary transition-colors font-medium">Armada</a>
-                    <a href="#keunggulan" class="text-gray-700 hover:text-secondary transition-colors font-medium">Keunggulan</a>
-                    <a href="#coverage" class="text-gray-700 hover:text-secondary transition-colors font-medium">Area</a>
-                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105">
+                    <a href="#layanan"
+                        class="text-gray-700 hover:text-secondary transition-colors font-medium">Layanan</a>
+                    <a href="#armada"
+                        class="text-gray-700 hover:text-secondary transition-colors font-medium">Armada</a>
+                    <a href="#keunggulan"
+                        class="text-gray-700 hover:text-secondary transition-colors font-medium">Keunggulan</a>
+                    <a href="#coverage"
+                        class="text-gray-700 hover:text-secondary transition-colors font-medium">Area</a>
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk"
+                        target="_blank"
+                        class="bg-whatsapp hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105">
                         Hubungi WhatsApp
                     </a>
                 </div>
@@ -143,12 +160,19 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t pt-4">
                 <div class="flex flex-col gap-3">
-                    <a href="#hero" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Beranda</a>
-                    <a href="#layanan" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Layanan</a>
-                    <a href="#armada" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Armada</a>
-                    <a href="#keunggulan" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Keunggulan</a>
-                    <a href="#coverage" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Area</a>
-                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-center mt-2">
+                    <a href="#hero"
+                        class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Beranda</a>
+                    <a href="#layanan"
+                        class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Layanan</a>
+                    <a href="#armada"
+                        class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Armada</a>
+                    <a href="#keunggulan"
+                        class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Keunggulan</a>
+                    <a href="#coverage"
+                        class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50">Area</a>
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk"
+                        target="_blank"
+                        class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-center mt-2">
                         Hubungi WhatsApp
                     </a>
                 </div>
@@ -166,7 +190,8 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div class="text-center lg:text-left animate-fade-in">
-                    <div class="inline-block bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <div
+                        class="inline-block bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-6">
                         ✓ Terpercaya 10+ Tahun di Jabodetabek
                     </div>
 
@@ -176,17 +201,21 @@
                     </h2>
 
                     <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-                        Jasa truk dan bongkar muat profesional dengan armada lengkap, harga kompetitif, dan layanan 24/7. Siap melayani kebutuhan logistik Anda di seluruh Jabodetabek.
+                        Jasa truk dan bongkar muat profesional dengan armada lengkap, harga kompetitif, dan layanan
+                        24/7. Siap melayani kebutuhan logistik Anda di seluruh Jabodetabek.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
+                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk"
+                            target="_blank"
+                            class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg> Pesan via WhatsApp
                         </a>
-                        <a href="#layanan" class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
+                        <a href="#layanan"
+                            class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
                             Lihat Layanan
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -228,15 +257,18 @@
                 <div class="hidden lg:block animate-fade-in" style="animation-delay: 0.2s">
                     <div class="relative">
                         <!-- GANTI GAMBAR TRUK HERO DI SINI -->
-                        <img src="public/truck-hero.jpg" alt="Armada Truk Jaya Laksana" class="w-full h-auto rounded-2xl shadow-2xl object-cover" style="max-height: 500px" onerror="
+                        <img src="public/truck-hero.jpg" alt="Armada Truk Jaya Laksana"
+                            class="w-full h-auto rounded-2xl shadow-2xl object-cover" style="max-height: 500px" onerror="
                   this.style.display = 'none';
                   this.nextElementSibling.style.display = 'block';
                 " />
                         <!-- Fallback jika gambar tidak ada -->
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hidden" id="hero-fallback">
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hidden"
+                            id="hero-fallback">
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                                     </svg>
@@ -246,7 +278,8 @@
                                     <p class="text-gray-300 text-sm">Engkel, Kecil, Besar</p>
                                 </div>
                                 <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                                     </svg>
@@ -256,7 +289,8 @@
                                     <p class="text-gray-300 text-sm">Asuransi Lengkap</p>
                                 </div>
                                 <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -264,7 +298,8 @@
                                     <p class="text-gray-300 text-sm">On-time Delivery</p>
                                 </div>
                                 <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-12 h-12 text-secondary mb-4" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -298,7 +333,8 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
                     <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -337,7 +373,8 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
                     <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -374,7 +411,8 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
                     <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -411,7 +449,8 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary">
                     <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -469,86 +508,107 @@
 
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Truk Engkel -->
-                <div class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
-                    <img src="public/truck-engkel.jpg" alt="Truk Engkel" class="truck-image" onerror="this.src = 'https://via.placeholder.com/400x200/1e3a5f/ffffff?text=Truk+Engkel'">
+                <div
+                    class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
+                    <img src="public/truck-engkel.jpg" alt="Truk Engkel" class="truck-image"
+                        onerror="this.src = 'https://via.placeholder.com/400x200/1e3a5f/ffffff?text=Truk+Engkel'">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Engkel</h3>
                         <p class="text-gray-600 mb-4">Cocok untuk pengiriman barang menengah dan pindahan rumah kecil.
                         </p>
                         <ul class="space-y-2 text-left mb-6 text-sm text-gray-700">
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Kapasitas menengah</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Fleksibel di jalan kecil</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Hemat biaya</li>
                         </ul>
-                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20engkel" target="_blank" class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
+                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20engkel"
+                            target="_blank"
+                            class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
                             Truk Ini</a>
                     </div>
                 </div>
 
                 <!-- Truk Kecil -->
-                <div class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
-                    <img src="public/truck-kecil.jpg" alt="Truk Kecil" class="truck-image" onerror="this.src = 'https://via.placeholder.com/400x200/f97316/ffffff?text=Truk+Kecil'">
+                <div
+                    class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
+                    <img src="public/truck-kecil.jpg" alt="Truk Kecil" class="truck-image"
+                        onerror="this.src = 'https://via.placeholder.com/400x200/f97316/ffffff?text=Truk+Kecil'">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Kecil</h3>
                         <p class="text-gray-600 mb-4">Ideal untuk pengiriman barang ringan dan pindahan apartemen.</p>
                         <ul class="space-y-2 text-left mb-6 text-sm text-gray-700">
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Kapasitas ringan</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Mudah bermanuver</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Cocok untuk kota</li>
                         </ul>
-                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20kecil" target="_blank" class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
+                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20kecil"
+                            target="_blank"
+                            class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
                             Truk Ini</a>
                     </div>
                 </div>
 
                 <!-- Truk Besar -->
-                <div class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
-                    <img src="public/truck-besar.jpg" alt="Truk Besar" class="truck-image" onerror="this.src = 'https://via.placeholder.com/400x200/1e3a5f/ffffff?text=Truk+Besar'">
+                <div
+                    class="bg-white rounded-2xl shadow-xl card-hover transition-all duration-300 border-2 border-transparent hover:border-secondary overflow-hidden">
+                    <img src="public/truck-besar.jpg" alt="Truk Besar" class="truck-image"
+                        onerror="this.src = 'https://via.placeholder.com/400x200/1e3a5f/ffffff?text=Truk+Besar'">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Besar</h3>
                         <p class="text-gray-600 mb-4">Untuk muatan berat, pindahan kantor, dan pengiriman besar.</p>
                         <ul class="space-y-2 text-left mb-6 text-sm text-gray-700">
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Kapasitas besar</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Muatan berat</li>
-                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-secondary mr-2" fill="currentColor"
+                                    viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>Efisien banyak barang</li>
                         </ul>
-                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20besar" target="_blank" class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
+                        <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20sewa%20truk%20besar"
+                            target="_blank"
+                            class="inline-block bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105">Pesan
                             Truk Ini</a>
                     </div>
                 </div>
@@ -693,7 +753,8 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -712,7 +773,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -731,7 +793,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -750,7 +813,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -769,7 +833,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -806,13 +871,16 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
+                    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20mau%20pesan%20jasa%20truk"
+                        target="_blank"
+                        class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                         </svg> Hubungi via WhatsApp
                     </a>
-                    <a href="tel:+6281297936738" class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
+                    <a href="tel:+6281297936738"
+                        class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -830,7 +898,8 @@
                 <div>
                     <!-- Logo Footer -->
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo" class="w-12 h-12 object-contain rounded-full" onerror="
+                        <img src="public/jasaangkutdanbongkarmuat.jpeg" alt="Jaya Laksana Logo"
+                            class="w-12 h-12 object-contain rounded-full" onerror="
                   this.style.display = 'none';
                   this.nextElementSibling.style.display = 'flex';
                 " />
@@ -846,7 +915,8 @@
                         </div>
                     </div>
                     <p class="text-gray-300 text-sm mb-4">
-                        Solusi Transportasi & Logistik Terpercaya di Jabodetabek. Hubungi kami via WhatsApp untuk layanan terbaik.
+                        Solusi Transportasi & Logistik Terpercaya di Jabodetabek. Hubungi kami via WhatsApp untuk
+                        layanan terbaik.
                     </p>
                 </div>
 
@@ -854,16 +924,20 @@
                     <h3 class="font-semibold mb-4">Menu Cepat</h3>
                     <ul class="space-y-2">
                         <li>
-                            <a href="#hero" class="text-gray-300 hover:text-secondary transition-colors text-sm">Beranda</a>
+                            <a href="#hero"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Beranda</a>
                         </li>
                         <li>
-                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Layanan</a>
+                            <a href="#layanan"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Layanan</a>
                         </li>
                         <li>
-                            <a href="#armada" class="text-gray-300 hover:text-secondary transition-colors text-sm">Armada</a>
+                            <a href="#armada"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Armada</a>
                         </li>
                         <li>
-                            <a href="#coverage" class="text-gray-300 hover:text-secondary transition-colors text-sm">Area Layanan</a>
+                            <a href="#coverage"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Area Layanan</a>
                         </li>
                     </ul>
                 </div>
@@ -881,10 +955,12 @@
                                 Pindahan</a>
                         </li>
                         <li>
-                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Bongkar Muat</a>
+                            <a href="#layanan"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Bongkar Muat</a>
                         </li>
                         <li>
-                            <a href="#layanan" class="text-gray-300 hover:text-secondary transition-colors text-sm">Pengiriman
+                            <a href="#layanan"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">Pengiriman
                                 Kilat</a>
                         </li>
                     </ul>
@@ -894,15 +970,18 @@
                     <h3 class="font-semibold mb-4">Hubungi Kami</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            <a href="tel:+6281297936738" class="text-gray-300 hover:text-secondary transition-colors text-sm">
+                            <a href="tel:+6281297936738"
+                                class="text-gray-300 hover:text-secondary transition-colors text-sm">
                                 +6281297936738</a>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -932,7 +1011,9 @@
     </footer>
 
     <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
-    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" target="_blank" class="whatsapp-float bg-whatsapp hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
+    <a href="https://wa.me/6281297936738?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk"
+        target="_blank"
+        class="whatsapp-float bg-whatsapp hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
         title="Chat via WhatsApp">
         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
             <path
