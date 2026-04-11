@@ -58,7 +58,7 @@ const jsonLd = {
     postalCode: "13450",
     addressCountry: "ID",
   },
-  telephone: "+6281234567890",
+  telephone: "087713350917",
   email: "info@jayalaksana.co.id",
   url: "https://jayalaksana.co.id",
   priceRange: "Rp500.000 - Rp5.000.000",
@@ -80,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="cTFzYMAD-SgOFzTrEmS--sS0NJQYMH4To_z2y5UHr2E" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
