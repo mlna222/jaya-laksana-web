@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Truk & Bongkar Muat Jabodetabek | Jaya Laksana - Solusi Logistik Terpercaya</title>
+    <meta name="description" content="Jasa truk dan bongkar muat profesional di Jabodetabek. Armada lengkap, harga kompetitif, layanan 24/7. Minta penawaran gratis sekarang!">
+    <meta name="keywords" content="jasa truk jabodetabek, bongkar muat, sewa truk, logistik jakarta, trucking service, pengiriman barang, cargo jakarta, truk engkel, truk tronton">
+    <meta name="google-site-verification" content="cTFzYMAD-SgOFzTrEmS--sS0NJQYMH4To_z2y5UHr2E" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/jasaangkutdanbongkarmuat.jpeg" type="image/jpeg">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e293b',    /* Navy */
+                        secondary: '#f97316',  /* Orange */
+                        whatsapp: '#25D366',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-698093643"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-698093643');
+        
+        // Google Ads Conversion Event
+        gtag('event', 'conversion', {'send_to': 'AW-698093643/DTnMCPu54t8CEMug8MwC'});
+    </script>
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('/trukjayalaksana.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        [x-cloak] { display: none !important; }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            border-color: #f97316;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-sans" x-data="{ mobileMenu: false }">
+
+    <!-- 1. NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/jasaangkutdanbongkarmuat.jpeg" alt="Logo" class="w-12 h-12 rounded-full object-contain">
+                <div>
+                    <h1 class="text-xl font-bold text-primary leading-tight">Jaya Laksana</h1>
+                    <p class="text-xs text-gray-500 font-medium">Logistik Terpercaya</p>
+                </div>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#hero" class="text-gray-700 hover:text-secondary transition-colors font-medium">Beranda</a>
+                <a href="#services" class="text-gray-700 hover:text-secondary transition-colors font-medium">Layanan</a>
+                <a href="#armada" class="text-gray-700 hover:text-secondary transition-colors font-medium">Armada</a>
+                <a href="#about" class="text-gray-700 hover:text-secondary transition-colors font-medium">Keunggulan</a>
+                <a href="#coverage" class="text-gray-700 hover:text-secondary transition-colors font-medium">Area</a>
+                <a href="https://wa.me/6287713350917" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 flex items-center gap-2">
+                    Hubungi WhatsApp
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" @click="mobileMenu = true">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu (Sheet style) -->
+        <div class="fixed inset-0 z-[60] bg-black/50" x-show="mobileMenu" x-cloak @click="mobileMenu = false"></div>
+        <div class="fixed top-0 right-0 bottom-0 w-[300px] bg-white z-[70] p-6 shadow-xl transform transition-transform duration-300"
+             :class="mobileMenu ? 'translate-x-0' : 'translate-x-full'" x-cloak>
+            <div class="flex flex-col gap-3 mt-12">
+                <a href="#hero" @click="mobileMenu = false" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50 font-medium text-lg">Beranda</a>
+                <a href="#services" @click="mobileMenu = false" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50 font-medium text-lg">Layanan</a>
+                <a href="#armada" @click="mobileMenu = false" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50 font-medium text-lg">Armada</a>
+                <a href="#about" @click="mobileMenu = false" class="text-gray-700 hover:text-secondary py-2 px-4 rounded-lg hover:bg-gray-50 font-medium text-lg">Keunggulan</a>
+                <a href="https://wa.me/6287713350917" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-center mt-2">
+                    Hubungi WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-up">
+                    <div class="inline-block bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-6">✓ Terpercaya 10+ Tahun di Jabodetabek</div>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Solusi Transportasi & <span class="text-secondary">Logistik Terpercaya</span> untuk Bisnis Anda
+                    </h2>
+                    <p class="text-base md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                        Jasa truk dan bongkar muat profesional dengan armada lengkap, harga kompetitif, dan layanan 24/7.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="https://wa.me/6287713350917" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i> Pesan via WhatsApp
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
+                            Lihat Layanan <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-2xl md:text-4xl font-bold text-white mb-1">500+</div>
+                            <div class="text-xs md:text-sm text-gray-300 uppercase tracking-widest">Klien Puas</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-4xl font-bold text-white mb-1">10+</div>
+                            <div class="text-xs md:text-sm text-gray-300 uppercase tracking-widest">Tahun Pengalaman</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-4xl font-bold text-white mb-1">24/7</div>
+                            <div class="text-xs md:text-sm text-gray-300 uppercase tracking-widest">Layanan</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-4xl font-bold text-white mb-1">98%</div>
+                            <div class="text-xs md:text-sm text-gray-300 uppercase tracking-widest">Tepat Waktu</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Cards (Desktop Only) -->
+                <div class="hidden lg:grid grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition-all card-hover group">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/40">
+                            <i data-lucide="truck" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Armada Lengkap</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Berbagai jenis truk siap melayani pengiriman Anda.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition-all card-hover group">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/40">
+                            <i data-lucide="users" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Bongkar Muat</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Tim profesional untuk penanganan barang yang aman.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition-all card-hover group">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/40">
+                            <i data-lucide="clock" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Layanan 24/7</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Selalu siap melayani logistik Anda kapan saja.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition-all card-hover group">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/40">
+                            <i data-lucide="dollar-sign" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Harga Kompetitif</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Penawaran harga terbaik dengan biaya transparan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Solusi Logistik Lengkap</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20">
+                        <i data-lucide="truck" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Jasa Angkut Barang</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Pengiriman barang berbagai jenis dengan armada yang sesuai kebutuhan.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Barang komersial</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Barang pindahan</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Event & pameran</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20">
+                        <i data-lucide="home" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Jasa Pindahan</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Layanan pindahan rumah, kantor, kontrakan, dan apartemen.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Pindahan rumah</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Pindahan kantor</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Pindahan apartemen</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20">
+                        <i data-lucide="box" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bongkar Muat</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Tim terlatih dengan peralatan modern untuk penanganan barang aman.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Tim profesional</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Peralatan lengkap</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Barang aman</li>
+                    </ul>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20">
+                        <i data-lucide="zap" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pengiriman Kilat</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Layanan ekspres untuk pengiriman mendesak dalam area Jabodetabek.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Priority handling</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Real-time tracking</li>
+                        <li class="flex items-center text-sm text-gray-700 font-medium"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Same-day delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ARMADA -->
+    <section id="armada" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16" data-aos="fade-up">Pilihan Armada Truk</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Armada 1 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full hover:border-secondary border-2 border-transparent transition-all" data-aos="zoom-in">
+                    <div class="h-56 relative bg-slate-50 flex items-center justify-center p-6">
+                        <img src="/trukengkel.jpeg" alt="Truk Engkel" class="object-contain h-full transition-transform hover:scale-110 duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk Engkel</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">Cocok untuk pengiriman barang menengah dan pindahan rumah kecil.</p>
+                        <ul class="space-y-2 text-left mb-6 text-sm text-gray-700 font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Kapasitas menengah</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Fleksibel di jalan kecil</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Hemat biaya</li>
+                        </ul>
+                        <a href="https://wa.me/6287713350917?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20sewa%20truk%20engkel" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all shadow-md">Pesan Truk Ini</a>
+                    </div>
+                </div>
+                <!-- Armada 2 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full hover:border-secondary border-2 border-transparent transition-all" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="h-56 relative bg-slate-50 flex items-center justify-center p-6">
+                        <img src="/pickup.jpeg" alt="Pick Up" class="object-contain h-full transition-transform hover:scale-110 duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Pick Up</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">Ideal untuk pengiriman barang ringan dan pindahan apartemen.</p>
+                        <ul class="space-y-2 text-left mb-6 text-sm text-gray-700 font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Kapasitas ringan</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Mudah bermanuver</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Cocok untuk kota</li>
+                        </ul>
+                        <a href="https://wa.me/6287713350917?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20sewa%20pickup" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all shadow-md">Pesan Truk Ini</a>
+                    </div>
+                </div>
+                <!-- Armada 3 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col h-full hover:border-secondary border-2 border-transparent transition-all" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="h-56 relative bg-slate-50 flex items-center justify-center p-6">
+                        <img src="/trukcdd.jpeg" alt="Truk CDD" class="object-contain h-full transition-transform hover:scale-110 duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Truk CDD</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed flex-grow">Untuk muatan berat, pindahan kantor, dan pengiriman besar.</p>
+                        <ul class="space-y-2 text-left mb-6 text-sm text-gray-700 font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Kapasitas besar</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Muatan berat</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-secondary mr-2"></i> Efisien banyak barang</li>
+                        </ul>
+                        <a href="https://wa.me/6287713350917?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20sewa%20truk%20cdd" class="bg-whatsapp hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all shadow-md">Pesan Truk Ini</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TESTIMONIALS (Grid) -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Apa Kata Klien Kami</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testi 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up">
+                    <div class="flex text-secondary mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Layanan luar biasa! Armada selalu tepat waktu dan tim bongkar muatnya sangat membantu saat pindahan kantor."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-slate-900">Budi Santoso</p>
+                        <p class="text-sm text-slate-500">Manager PT. Maju</p>
+                    </div>
+                </div>
+                <!-- Testi 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-secondary mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Harga sangat kompetitif dengan kualitas premium. Sudah jadi langganan tetap untuk pengiriman barang gudang."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-slate-900">Siti Aminah</p>
+                        <p class="text-sm text-slate-500">Direktur CV. Sejahtera</p>
+                    </div>
+                </div>
+                <!-- Testi 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-secondary mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-secondary"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Respons cepat dan timnya sangat teliti. Barang pameran sampai dalam kondisi sempurna tanpa cacat."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-slate-900">Ahmad Zulkifli</p>
+                        <p class="text-sm text-slate-500">Owner Toko Berkah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ (Accordion) -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Pertanyaan Sering Diajukan</h2>
+            <div class="space-y-4" x-data="{ active: null }">
+                <div class="bg-slate-50 border rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left" @click="active === 1 ? active = null : active = 1">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform" :class="active === 1 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600" x-show="active === 1" x-cloak>Rata-rata 2-4 jam dalam Jabodetabek.</div>
+                </div>
+                <div class="bg-slate-50 border rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left" @click="active === 2 ? active = null : active = 2">
+                        <span>Bagaimana cara hitung harga?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform" :class="active === 2 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600" x-show="active === 2" x-cloak>Berdasarkan jarak, jenis armada, dan apakah memerlukan tim bongkar muat.</div>
+                </div>
+                <div class="bg-slate-50 border rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left" @click="active === 3 ? active = null : active = 3">
+                        <span>Apakah melayani luar Jabodetabek?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform" :class="active === 3 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600" x-show="active === 3" x-cloak>Saat ini kami fokus melayani area Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA & MAPS -->
+    <section id="contact" class="py-12 bg-gradient-to-br from-primary to-[#243b53] text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+                <!-- Map (Left) -->
+                <div class="w-full h-[350px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10" data-aos="fade-right">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.38891599912!2d106.75148467408042!3d-6.34365206206318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef09935112c3%3A0xe40c5d119ba5ee0b!2sJl.%20Pd.%20Cabe%20Indah%201%20No.36%2C%20Pd.%20Cabe%20Udik%2C%20Kec.%20Pamulang%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015418!5e0!3m2!1sid!2sid!4v1775921966464!5m2!1sid!2sid" 
+                      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Info (Right) -->
+                <div data-aos="fade-left">
+                    <span class="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-widest">Hubungi Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Melayani Kebutuhan Logistik Anda</h2>
+                    <p class="text-slate-300 mb-6 text-base">Kunjungi kantor kami atau hubungi via WhatsApp untuk respon cepat 24/7.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5 text-secondary"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">WhatsApp</p>
+                                <p class="text-base font-bold">0877-1335-0917</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-secondary"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Alamat Kantor</p>
+                                <p class="text-base font-bold leading-snug">Jl. Pd. Cabe Indah 1 No.36, Kec. Pamulang, Tangerang Selatan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/6287713350917" target="_blank" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i> Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white py-8 border-t border-white/10">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="/jasaangkutdanbongkarmuat.jpeg" alt="Logo" class="w-10 h-10 rounded-full">
+                <h3 class="text-lg font-bold uppercase tracking-wide">Jaya Laksana</h3>
+            </div>
+            <p class="text-gray-400 text-xs italic">© 2026 Jaya Laksana. Logistik Terpercaya di Jabodetabek.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6287713350917?text=Halo%20Jaya%20Laksana,%20saya%20ingin%20bertanya%20tentang%20jasa%20truk" 
+       target="_blank" 
+       class="whatsapp-float bg-whatsapp hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-10 h-10"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
